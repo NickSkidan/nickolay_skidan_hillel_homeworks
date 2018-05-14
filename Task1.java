@@ -27,14 +27,15 @@ public class Task1 {
 
         System.out.println();
 
-        int nums[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+        int nums[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 100};
         for(int j = 0; j < nums.length; j++)
             System.out.println(nums[j]);
 
         System.out.println();
 
-        for(int d = 0; d < nums.length; d++)
-            System.out.print(nums[d] + " ");
+        for(int i = 0; i < nums.length; i++)
+            System.out.print(nums[i] + " ");
+
 
     }
 }

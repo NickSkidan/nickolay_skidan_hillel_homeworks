@@ -12,10 +12,10 @@ public class Task6 {
             }
             countArray[i] = count;
         }
-        int min = countArray[0];
-        int max = countArray[0];
-        int minNum = nums[0];
-        int maxNum = nums[0];
+        int min = 10;
+        int max = 0;
+        int minNum = 0;
+        int maxNum = 0;
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < countArray.length; j++) {
                 if (countArray[j] < min) {

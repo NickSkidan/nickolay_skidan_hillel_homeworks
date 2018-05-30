@@ -24,8 +24,7 @@ public class ProcessorCar {
         System.out.println("Список автомобилей " + releaseYear + " года выпуска, цена которых больше " + price);
         for (int i = 0; i < garage.length; i++) {
             if (releaseYear == garage[i].releaseYear & price <= garage[i].price) {
-                System.out.println(i
-                );
+                System.out.println(i);
             }
         }
     }

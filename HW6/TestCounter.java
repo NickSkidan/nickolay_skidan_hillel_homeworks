@@ -10,7 +10,7 @@ public class TestCounter {
     }
 
     private static double count(double num) {
-        num = 100 / num;
+        num = 1000 / num;
         return num;
     }
 }

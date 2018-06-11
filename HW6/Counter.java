@@ -15,8 +15,8 @@ public class Counter {
         }
     }
 
-    public void Scan(double i, double k) {
-        JOptionPane.showMessageDialog(null, "Теперь первое число равно " + i);
-        JOptionPane.showMessageDialog(null, "Теперь второе число равно " + k);
+    public void Scan(double a, double b) {
+        JOptionPane.showMessageDialog(null, "Теперь первое число равно " + a);
+        JOptionPane.showMessageDialog(null, "Теперь второе число равно " + b);
     }
 }

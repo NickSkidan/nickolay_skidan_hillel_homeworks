@@ -2,10 +2,9 @@ import java.util.*;
 
 public class Jail {
     static String[] prisoners;
-    static String[] id;
+    static int[] id;
     static Scanner scn = new Scanner(System.in);
     static final int MIN_NAME_LENGTH = 2;
-    static final int ID_LENGTH = 4;
     static boolean isNameCorrect = true, isIDCorrect = true;
 
     public static void putPrisoner() {
@@ -29,12 +28,12 @@ public class Jail {
         while (isIDCorrect) {
             for (int i = 0; i < id.length; i++) {
                 try {
-                    id[i] = scn.nextLine();
-                    if (id[i].length() != ID_LENGTH)
+                    id[i] = scn.nextInt();
+                    if (id[i] < 1000 || id[i] >= 10000)
                         throw new ArrayStoreException();
                     isIDCorrect = false;
                 } catch (ArrayStoreException e) {
-                    System.out.println("Prisoner's id consisits of 4 digits");
+                    System.out.println("Prisoner's id begins from 1000 & ends at 10000");
                 }
             }
         }

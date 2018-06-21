@@ -7,8 +7,7 @@ public class Thread2 extends Thread implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        int i = 0;
-        while (i < 100)
-            System.out.println("i from Second Thread: " + i++);
+        for (int i = 0; i < 50; i++)
+            System.out.println("i from Second Thread: " + i);
     }
 }

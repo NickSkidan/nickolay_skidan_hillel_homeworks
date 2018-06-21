@@ -4,9 +4,8 @@ public class MainThread {
             @Override
             public void run() {
                 System.out.println("First Thread");
-                int j = 0;
-                while (j < 100)
-                    System.out.println("j from First Thread: " + j++);
+                for (int j = 0; j < 50; j++)
+                    System.out.println("j from First Thread: " + j);
             }
         });
         thread1.setPriority(Thread.MIN_PRIORITY);

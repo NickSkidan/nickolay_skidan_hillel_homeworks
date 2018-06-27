@@ -15,5 +15,6 @@ public class CatChar {
             if ((char) i == 'T') i = 'G';
             if (i != -1) fos.write(i);
         } while (i != -1);
+        fos.close();
     }
 }

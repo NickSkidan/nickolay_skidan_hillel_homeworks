@@ -16,5 +16,6 @@ public class CatChar {
             if (i != -1) fos.write(i);
         } while (i != -1);
         fos.close();
+        fis.close();
     }
 }
